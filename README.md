@@ -36,5 +36,5 @@ This repository contains a complete RISC-V processor designed and implemented in
 
 ## Author
 
-**Afroz Sahar** — Electrical (Electronics & Communications) Engineer
-Focus: RISC-V, Digital Design, FPGA, Embedded Systems, Computer Architecture, RTL Design, VLSI Circuit Design, Hardware/Software Co-Design, Application-specific processor, Machine learning
+- **Afroz Sahar** — Electrical (Electronics & Communications) Engineer
+- **Focus:** RISC-V, Digital Design, FPGA, Embedded Systems, Computer Architecture, RTL Design, VLSI Circuit Design, Hardware/Software Co-Design, Application-specific processor, Machine learning
