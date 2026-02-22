@@ -7,17 +7,15 @@ This repository contains a complete single-cycle RISC-V processor designed and i
 - **RTL / Top-level module**  
   `top.v` (includes: ALU.v, Branch_Comparator.v, clk_divider.v, Control_Unit.v, Data_Memory.v, Forwarding_Unit.v, Hazard_Detection_Unit.v, Immediate_Generator.v, Instruction_Memory.v, Mux_1R1.v, Mux_1R2.v, Mux_2_Imm_R2.v, Mux_2_PC_R1.v, Mux_PC_Selection.v, Mux3_Result.v, Program_Counter.v, Program_Counter_Plus_4.v, Register_File.v, Register1.v, Register2.v, Register3.v, Register4.v, Top_Module.v)
 - **Assembly Program**  
-  `Assembly Prog for HR Anomaly Detector.txt`
+  `Assembly Prog for HR Anomaly Detector.asm`
 - **Memory Files**  
   `IM.mem`
 - **Testbench**  
   `tb.v`
 - **Vivado Project (Optional)**  
   `risc-v.xpr`
-- **Documentation / Figures**  
-  `pipelined processor diagram.pdf`, `README.md`
 
-  ## Features
+## Features
 
 - Modular Pipelined RISC-V datapath  
 - Supports R-type, I-type, load/store, branch, and jump RV32I instructions  
