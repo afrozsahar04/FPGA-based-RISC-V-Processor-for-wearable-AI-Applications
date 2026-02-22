@@ -30,4 +30,9 @@ This repository contains a complete single-cycle RISC-V processor designed and i
 - BRAM inferrable for instruction memory  
 - Tailored for AI applications
 ## Figures
-  ![Pipelined Schematic](figures/pipelined processer diagram.jpg)
+
+### Pipelined Processor Schematic
+![Pipelined Processor Diagram](figures/pipelined_processor_diagram.jpg)
+
+### Timing Summary
+![Design Timing Summary](figures/design_timing_summary.jpg)
