@@ -29,5 +29,5 @@ This repository contains a complete single-cycle RISC-V processor designed and i
 - Synchronous memory reads and writes  
 - BRAM inferrable for instruction memory  
 - Tailored for AI applications
-
-  [Pipelined Schematic](figures/pipelined processer diagram.jpg)
+## Figures
+  ![Pipelined Schematic](figures/pipelined processer diagram.jpg)
