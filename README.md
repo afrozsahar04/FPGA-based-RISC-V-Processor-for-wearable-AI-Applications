@@ -1,6 +1,6 @@
 # RISC-V Processor Implementation
 
-This repository contains a complete single-cycle RISC-V processor designed and implemented in Verilog.
+This repository contains a complete RISC-V processor designed and implemented in Verilog on FPGA.
 
 ## Folder Structure
 
