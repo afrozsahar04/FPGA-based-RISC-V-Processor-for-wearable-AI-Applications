@@ -23,10 +23,9 @@ This repository contains a complete RISC-V processor designed and implemented in
 - Testbench for functional verification  
 - Memory initialization using `.mem` files  
 - FPGA-ready (Vivado project included)  
-- Integrated ML pipeline for heart rate anomaly detection (Python)  
-- Synchronous memory reads and writes  
+- Synchronous memory reads 
 - BRAM inferrable for instruction memory  
-- Tailored for AI applications
+- Tailorable for AI applications
 ## Figures
 
 ### Pipelined Processor Schematic
