@@ -1,0 +1,46 @@
+.text
+    .globl _start
+
+_start:
+    # acc = w0 = 4900
+    lui     t0, 1              # t0 = 4096
+    addi    t0, t0, 804        # t0 = 4900
+
+    # Hardcoded inputs
+    addi    a0, x0, 22         # AGE
+    addi    a1, x0, 0          # GENDER (0 = female, 1 = male)
+    addi    a2, x0, 100        # HEART_RATE
+
+    # acc += w_age * AGE  (w_age = -3)
+    add     t1, a0, a0         # t1 = AGE * 2
+    add     t1, t1, a0         # t1 = AGE * 3
+    sub     t0, t0, t1         # acc -= 3 * AGE
+
+    # acc += w_gender * GENDER (w_gender = -43)
+    beq     a1, x0, skip_gender
+    addi    t1, x0, 43
+    sub     t0, t0, t1
+
+skip_gender:
+    # hr_scaled = HEART_RATE << 6
+    slli    t2, a2, 6
+
+    # diff = abs(hr_scaled - acc)
+    sub     t3, t2, t0
+    bge     t3, x0, check_threshold
+    sub     t3, x0, t3         # negate if negative
+
+check_threshold:
+    # threshold = 1447
+    addi    t1, x0, 1447
+    bge     t1, t3, normal
+
+anomaly:
+    addi    t4, x0, 1
+    jal     x0, done
+
+normal:
+    addi    t4, x0, 0
+
+done:
+    addi    x0, x0, 0          # nop / end
