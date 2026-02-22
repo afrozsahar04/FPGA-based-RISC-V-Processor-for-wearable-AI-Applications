@@ -1,6 +1,6 @@
 # RISC-V Processor Implementation
 
-This repository contains a complete RISC-V processor designed and implemented in Verilog on FPGA.
+This repository contains a complete RISC-V processor designed and implemented in Verilog on FPGA. The project began with designing a single-cycle RISC-V processor from scratch, implementing the full RV32I instruction set and verifying its functionality in simulation. While the single-cycle design worked correctly in simulation, attempts to implement it on FPGA revealed limitations due to timing constraints, non-synchronous memory access, and high resource utilization, making it non-synthesizable in its initial form. To overcome these issues, the processor was redesigned with a pipelined architecture, improving performance and meeting FPGA timing requirements. Instruction memory was implemented using BRAM for efficient, synchronous reads and writes. To demonstrate the processor’s capability, an ML-based heart-rate anomaly detector application was developed using a linear regression model and successfully test-run on the RISC-V core. The design includes timing diagrams and BRAM implementation details for reference.
 
 ## Folder Structure
 
@@ -26,13 +26,6 @@ This repository contains a complete RISC-V processor designed and implemented in
 - Synchronous memory reads 
 - BRAM inferrable for instruction memory  
 - Tailorable for AI applications
-## Figures
-
-### Pipelined Processor Schematic
-![Pipelined Processor Diagram](figures/pipelined_processor_diagram.jpg)
-
-### Timing Summary
-![Design Timing Summary](figures/design_timing_summary.jpg)
 
 ## Author
 
